@@ -85,19 +85,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>
 				<version>${maven.shade.plugin.version}</version>
-				<configuration>
-					<createDependencyReducedPom>false</createDependencyReducedPom>
-					<finalName>batchedsummarization</finalName>
-					<filters>
-						<filter>
-							<artifact>*:*</artifact>
-							<excludes>
-								<!-- Suppress module-info.class warning-->
-								<exclude>module-info.class</exclude>
-							</excludes>
-						</filter>
-					</filters>
-				</configuration>
+
 				<executions>
 					<execution>
 						<phase>package</phase>
